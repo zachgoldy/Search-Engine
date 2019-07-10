@@ -196,7 +196,7 @@ def import_stopwords(filename, hashtable):
     return hashtable
 
 
-def main(directory):
+def main(directory): #Put your directory of text files you want the engine to search through here.
     hash = HashTableLinear()
     hash = import_stopwords("stop_words.txt", hash)
     search = SearchEngine(directory, hash)
